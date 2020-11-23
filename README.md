@@ -68,3 +68,12 @@ Implementation by Flconn
 * Implementation: nmslib , hnsw , faiss
 
 TBC...
+
+
+
+@misc{cvpr20_tutorial_image_retrieval,
+  author = {Yusuke Matsui and Takuma Yamaguchi and Zheng Wang},
+  title = {CVPR2020 Tutorial on Image Retrieval in the Wild},
+  howpublished = {\url{https://matsui528.github.io/cvpr2020_tutorial_retrieval/}},
+  year = {2020}
+}
