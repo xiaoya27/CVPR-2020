@@ -3,8 +3,7 @@
 
 ## Usage
 ```bash
-git clone https://github.com/matsui528/sis.git
-cd sis
+
 pip install -r requirements.txt
 
 # Put your image files (*.jpg) on static/img
