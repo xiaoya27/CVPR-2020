@@ -1,15 +1,15 @@
 # CVPR-2020
 Valuable notes and toy projects from CVPR 2020 Tutorial on Image Retrieval in the Wild
 
-## this is a summary of [CVPR 2020 Tutorial on Image Retrieval](https://matsui528.github.io/cvpr2020_tutorial_retrieval/) in the Wild, I have found Matsui Sensei's talk on Billion scale Approximate Nearest Neighbor Search extremely informative, therefore I tried to summarize  the key points in here for my own reference.
+this is a summary of [CVPR 2020 Tutorial on Image Retrieval](https://matsui528.github.io/cvpr2020_tutorial_retrieval/) in the Wild, I have found Matsui Sensei's talk on Billion scale Approximate Nearest Neighbor Search extremely informative, therefore I tried to summarize  the key points in here for my own reference.
 
 
 ![img](/imgs/cheatsheet.PNG)
 
 
-### Research Question: Given a query 𝒒, find the closest vector from the database(One of the fundamental problems in computer science)
+## Research Question: Given a query 𝒒, find the closest vector from the database(One of the fundamental problems in computer science)
 
-#### Solution: 
+## Solution: 
 1. Nearest Neighbor Search(NN) :worried:
 
     linear scan, 𝑂(𝑁𝐷), slow 
@@ -20,18 +20,18 @@ Valuable notes and toy projects from CVPR 2020 Tutorial on Image Retrieval in th
     Don’t necessarily have to be exact neighbors
     Trade off: runtime, accuracy, and memory consumption
 
-#### Solution Implementation 
-##### NN
+## Solution Implementation 
+### NN
 Naïve implementation
 
 Fast implementation (by Faiss) : Matrix multiplication by BLAS
 
 ps : NN in GPU (faiss gpu ) is 10x faster than NN in CPU faiss cpu
 
-##### ANN
+### ANN
 ![img](/imgs/alg.PNG)
 
-###### Locality Sensitive Hashing (LSH)
+#### Locality Sensitive Hashing (LSH)
 
 
 * Math friendly :blush:
@@ -54,11 +54,11 @@ Implementation by Flconn
 
 
 
-###### Tree/ Space Partitioning
+#### Tree/ Space Partitioning
 ![img](/imgs/flann.png)
 ![img](/imgs/annoy-tree.png)
 
-###### Graph traversal
+#### Graph traversal
 
 * Very popular in recent years
 * Around 2017, it turned out that the graph traversal based methods work well for million scale data
@@ -67,3 +67,4 @@ Implementation by Flconn
     * Hierarchical NSW (HNSW)
 * Implementation: nmslib , hnsw , faiss
 
+TBC...
