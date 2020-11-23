@@ -30,3 +30,40 @@ ps : NN in GPU (faiss gpu ) is 10x faster than NN in CPU faiss cpu
 
 ##### ANN
 ![img](/imgs/alg.PNG)
+
+###### Locality Sensitive Hashing (LSH)
+
+
+* Math friendly :blush:
+
+* Popular in the theory area (FOCS, STOC, …) :blush:
+
+* Large memory cost :worried:
+
+* Need several tables to boost the accuracy :worried:
+
+* Need to store the original data on memory :worried:
+
+* Data dependent methods such as PQ are better for real world data :worried:
+
+* Thus, in recent CV papers, LSH has been treated as a classic method :worried: :worried:
+
+Implementation by Flconn
+
+![img](/imgs/falconn.png)
+
+
+
+###### Tree/ Space Partitioning
+![img](/imgs/flann.png)
+![img](/imgs/annoy-tree.png)
+
+###### Graph traversal
+
+* Very popular in recent years
+* Around 2017, it turned out that the graph traversal based methods work well for million scale data
+* Pioneer:
+    * Navigable Small World Graphs (NSW)
+    * Hierarchical NSW (HNSW)
+* Implementation: nmslib , hnsw , faiss
+
