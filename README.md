@@ -1,5 +1,5 @@
 # CVPR-2020
-Valuable notes and toy projects from CVPR 2020 Tutorial on Image Retrieval in the Wild
+toy projects from CVPR 2020 Tutorial on Image Retrieval in the Wild
 
 this is a summary of [CVPR 2020 Tutorial on Image Retrieval](https://matsui528.github.io/cvpr2020_tutorial_retrieval/) in the Wild, I have found Matsui Sensei's talk on Billion scale Approximate Nearest Neighbor Search extremely informative, therefore I tried to summarize  the key points in here for my own reference.
 
